@@ -1,0 +1,101 @@
+.footer-fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width:100%;
+}
+
+.side-nav .collapsible-body > ul:not(.collapsible) > li.active,
+.side-nav.fixed .collapsible-body > ul:not(.collapsible) > li.active {
+    background-color: #5e35b1 !important;
+}
+
+.pagination > li.active {
+    background-color: #5e35b1 !important;
+}
+
+.parallax-container {
+    height: 600px !important;
+}
+
+.dropdown-content li > a {
+    color: #43a047 !important;
+}
+
+.index_nav {
+    background-color: rgba(0,0,0,0);
+    box-shadow: none !important;
+}
+
+.collapsible ul > li > a {
+    padding-left: 32px;
+    padding-right: 32px
+}
+.ul-mobile > li > a,
+.collapsible-header {
+    padding: 0 32px !important;
+}
+
+.collapsible-body > ul > li > a {
+    padding-left: 47px !important;
+}
+
+.logo-large {
+    margin-left: 10px;
+}
+
+.table-of-contents a.active {
+    border-left: 2px solid #0288d1 !important;
+}
+
+.table-of-contents a:hover:not(.active) {
+    border-left: 1px solid #29b6f6 !important;
+}
+
+.pin-top {
+    position: relative;
+}
+
+.pin-bottom {
+    position: relative;
+}
+
+.pinned {
+    position: fixed !important;
+}
+
+.tabs-wrapper {
+    padding-top: 62px;
+}
+
+.resource-title {
+    margin-left: 20px;
+}
+
+.chip-version {
+    margin: 0 8px;
+    background-color: #4fc3f7 !important;
+    color: white !important;
+}
+
+.chip-page {
+     margin: 0 2px;
+     background-color: #66bb6a !important;
+     color: white !important;
+ }
+
+.chip-page:hover {
+    background-color: #81c784 !important;
+}
+
+.resource-description {
+    margin: 5px 40px;
+}
+
+pre[class*="language-"] {
+    background-color: #f8f9fa !important;
+}
+
+figure {
+    background-color: #f8f9fa;
+    padding: 24px;
+}
