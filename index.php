@@ -58,7 +58,7 @@ switch ($ContextInfo) {
 <body>
 <!--侧滑栏和顶部图片-->
 <div class="parallax-container">
-    <div class="parallax"><img alt="img_index_parallax" src="https://code.miumstudio.cn/images/img_index_parallax.jpg"></div>
+    <div class="parallax"><img alt="img_index_parallax" src="https://code.miumstudio.cn/images/parallax_index.jpg"></div>
     <nav  class="index_nav">
         <div class="nav-wrapper">
             <a class="brand-logo hide-on-large-only" href="/">Furcode</a>
