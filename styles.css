@@ -137,6 +137,10 @@
     margin: 5px 30px;
 }
 
+.btn-blue-text {
+    color: #29b6f6 !important;
+}
+
 pre[class*="language-"] {
     background-color: #f8f9fa !important;
 }

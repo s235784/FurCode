@@ -34,6 +34,17 @@ switch ($ContextInfo) {
         break;
 }
 ?>
+<!--
+     _   _             _______  _
+    | \ | |           |__   __|(_)
+    |  \| | _   _   ___  | |    _   __ _  _ __
+    | . ` || | | | / _ \ | |   | | / _` || '_ \
+    | |\  || |_| || (_) || |   | || (_| || | | |
+    |_| \_| \__,_| \___/ |_|   |_| \__,_||_| |_|
+
+    Author: NuoTian (https://github.com/s235784)
+
+-->
 
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -44,21 +55,21 @@ switch ($ContextInfo) {
     <meta name="description" content="静态资源和其他资源下载站"/>
     <meta name="theme-color" content="#0288D1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="shortcut icon" href="https://cafe.miumstudio.cn/favicon_32.ico">
+    <link rel="shortcut icon" href="https://cafe.furcode.cn/favicon_32.ico">
     <link href="styles.css" rel="stylesheet">
-    <link href="https://code.miumstudio.cn/prism/css/prism.css" rel="stylesheet"/>
+    <link href="https://code.furcode.cn/prism/css/prism.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://res.miumstudio.cn/iconicfont/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet"/>
-    <link href="https://res.miumstudio.cn/materialize/0.97.8/css/materialize.css" media="screen,projection" rel="stylesheet"/>
-    <script type="text/javascript" src="https://res.miumstudio.cn/jquery/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://res.miumstudio.cn/materialize/0.97.8/js/materialize.min.js"></script>
-    <script type="text/javascript" src="https://res.miumstudio.cn/jquery/lazyload/1.9.5/lazyload.min.js"></script>
-    <script type="text/javascript" src="https://code.miumstudio.cn/prism/js/prism.js"></script>
+    <link href="https://res.furcode.cn/iconicfont/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet"/>
+    <link href="https://res.furcode.cn/materialize/0.97.8/css/materialize.css" media="screen,projection" rel="stylesheet"/>
+    <script type="text/javascript" src="https://res.furcode.cn/jquery/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://res.furcode.cn/materialize/0.97.8/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://res.furcode.cn/jquery/lazyload/1.9.5/lazyload.min.js"></script>
+    <script type="text/javascript" src="https://code.furcode.cn/prism/js/prism.js"></script>
 </head>
 <body>
 <!--侧滑栏和顶部图片-->
 <div class="parallax-container">
-    <div class="parallax"><img alt="img_index_parallax" src="https://code.miumstudio.cn/images/parallax_index.jpg"></div>
+    <div class="parallax"><img alt="img_index_parallax" src="https://code.furcode.cn/images/parallax_index.jpg"></div>
     <nav  class="index_nav">
         <div class="nav-wrapper">
             <a class="brand-logo hide-on-large-only" href="/">Furcode</a>
