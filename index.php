@@ -5,6 +5,9 @@
  * Date: 2020/1/21
  * Time: 15:53
  */
+
+define('IN_SYS', TRUE);
+
 if (empty($_GET['ContextInfo'])) {
     $ContextInfo = "index";
 } else if ($_GET['ContextInfo'] == null) {
@@ -42,7 +45,7 @@ switch ($ContextInfo) {
     | |\  || |_| || (_) || |   | || (_| || | | |
     |_| \_| \__,_| \___/ |_|   |_| \__,_||_| |_|
 
-    Author: NuoTian (https://github.com/s235784)
+    Author: NuoTian (https://nuotian.furry.pro)
 
 -->
 
@@ -51,7 +54,7 @@ switch ($ContextInfo) {
 <head>
     <title>兽码云 - <?php echo $Title ?></title>
     <meta charset="utf-8">
-    <meta name="Keywords" content="静态资源,下载站,兽人,JavaScript,CSS,FurryCafe,Furry"/>
+    <meta name="Keywords" content="静态资源,下载站,诺天,兽人,JavaScript,CSS,FurryCafe,Furry,NuoTian,s235784"/>
     <meta name="description" content="静态资源和其他资源下载站"/>
     <meta name="theme-color" content="#0288D1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -65,12 +68,19 @@ switch ($ContextInfo) {
     <script type="text/javascript" src="https://res.furcode.cn/materialize/0.97.8/js/materialize.min.js"></script>
     <script type="text/javascript" src="https://res.furcode.cn/jquery/lazyload/1.9.5/lazyload.min.js"></script>
     <script type="text/javascript" src="https://code.furcode.cn/prism/js/prism.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149898603-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-149898603-4');
+    </script>
 </head>
 <body>
 <!--侧滑栏和顶部图片-->
 <div class="parallax-container">
     <div class="parallax"><img alt="img_index_parallax" src="https://code.furcode.cn/images/parallax_index.jpg"></div>
-    <nav  class="index_nav">
+    <nav class="index_nav">
         <div class="nav-wrapper">
             <a class="brand-logo hide-on-large-only" href="/">Furcode</a>
             <a class="brand-logo hide-on-med-and-down logo-large" href="/">Furcode</a>
@@ -118,7 +128,7 @@ switch ($ContextInfo) {
         include_once('index-main.php');
         break;
     case 'about':
-        include_once('index-about.html');
+        include_once('content/index-about.html');
         break;
     case 'static':
         include_once('index-static.php');
@@ -131,7 +141,7 @@ switch ($ContextInfo) {
         break;
 }
 ?>
-<?php include_once('footer.html');?>
+<?php include_once('content/footer.html');?>
 </body>
 <script>
     $(function () {
@@ -148,4 +158,10 @@ switch ($ContextInfo) {
     });
 </script>
 </html>
+
+<?php
+// 获取下载链接
+include_once "lib/link.php";
+getDownloadLink("https://code.furcode.cn/dl/link.xml");
+?>
 

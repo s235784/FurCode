@@ -12,7 +12,7 @@
         <div>
             <h4>游戏资源</h4>
             <div class="divider" style="margin: 0 8px;"></div>
-            <?php include_once('main-game.html');?>
+            <?php include_once('content/main-game.html');?>
         </div>
     </div>
     <br>

@@ -12,7 +12,7 @@
         <div>
             <h4>其他资源</h4>
             <div class="divider" style="margin: 0 8px;"></div>
-            <?php include_once('main-others.html');?>
+            <?php include_once('content/main-others.html');?>
         </div>
     </div>
     <br>

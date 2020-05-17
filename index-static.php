@@ -12,7 +12,7 @@
             <div>
                 <h4>静态资源</h4>
                 <div class="divider" style="margin: 0 8px;"></div>
-                <?php include_once('main-static.html');?>
+                <?php include_once('content/main-static.html');?>
             </div>
 
         <!--<div class="row">
