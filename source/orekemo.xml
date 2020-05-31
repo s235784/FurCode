@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<res>
+    <file>
+        <name>Orekemo</name>
+        <intro>压缩包解压密码：orekemo</intro>
+        <image>https://code.furcode.cn/resource/orekemo/orekemo_1.png</image>
+        <image>https://code.furcode.cn/resource/orekemo/orekemo_2.png</image>
+    </file>
+    <source>
+        <name>百度云</name>
+        <url>https://pan.baidu.com/s/1ekDrG39DsCJ5eziT7hFbug</url>
+        <passwd>rcc6</passwd>
+    </source>
+</res>

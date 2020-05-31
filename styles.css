@@ -1,3 +1,13 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
 .footer-fixed-bottom {
     position: fixed;
     bottom: 0;
@@ -139,6 +149,15 @@
 
 .btn-blue-text {
     color: #29b6f6 !important;
+}
+
+.table-of-contents-first {
+    padding-left: 15px !important;
+}
+
+.table-of-contents-first:hover:not(.active) {
+    padding-left: 14px !important;
+    border-left: 1px solid #29b6f6 !important;
 }
 
 pre[class*="language-"] {

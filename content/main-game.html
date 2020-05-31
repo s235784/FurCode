@@ -1,5 +1,5 @@
 <br>
-<div class="game-div">
+<div class="game-div" id="div-kemo-coliseum">
     <div class="valign-wrapper resource-title">
         <h5 class="valign">KemoColiseum</h5>
         <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Windows可执行文件"><span class="chip chip-blue">EXE</span></a>
@@ -19,12 +19,13 @@
             <img  data-original="https://code.furcode.cn/resource/kemo_coliseum/kemo_coliseum_2.png" src="https://code.furcode.cn/images/parallax_index.jpg" alt="beek-cg" class="responsive-img resource-description-img lazy">
         </div>
         <div class="right">
-            <a class="waves-effect waves-light btn download-btn disabled"><i class="material-icons left">vertical_align_bottom</i>下载</a>
+            <a class="waves-effect waves-light btn download-btn"
+               source="kemo-coliseum" onclick="getDlLink(this)"><i class="material-icons left">vertical_align_bottom</i>下载</a>
         </div>
     </div>
 </div>
 <br>
-<div class="game-div">
+<div class="game-div" id="div-lagoon-lounge-1-zh">
     <div class="valign-wrapper resource-title">
         <h5 class="valign">Lagoon Lounge 1</h5>
         <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Windows可执行文件"><span class="chip chip-blue">EXE</span></a>
@@ -39,18 +40,19 @@
         </div>
         <div class="right">
             <a class="waves-effect waves-light btn download-btn"
-               type="lagoonlounge1zh" source="baidu" onclick="getDlLink(this)"><i class="material-icons left">vertical_align_bottom</i>下载</a>
+               source="lagoon-lounge-1-zh" onclick="getDlLink(this)"><i class="material-icons left">vertical_align_bottom</i>下载</a>
         </div>
     </div>
 </div>
 <br>
-<div class="game-div">
-    <div class="valign-wrapper resource-title">
+<div class="game-div" id="div-lagoon-lounge-2">
+    <div class="valign-wrapper resource-title" id="div-lagoon-lounge-3">
         <h5 class="valign">Lagoon Lounge 2 & 3</h5>
         <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Windows可执行文件"><span class="chip chip-blue">EXE</span></a>
         <span class="chip chip-light-blue">英语</span>
     </div>
     <div class="resource-description">
+        <p>PS:在 其他资源 内有二三部的剧本汉化</p>
         <div class="row hide-on-small-only">
             <div class="col s12 m6">
                 <img  data-original="https://code.furcode.cn/resource/lagoon_loung/2/lagoon_lounge_1.png" src="https://code.furcode.cn/images/parallax_index.jpg" alt="beek-cg" class="responsive-img resource-description-img lazy materialboxed">
@@ -64,12 +66,17 @@
             <img  data-original="https://code.furcode.cn/resource/lagoon_loung/3/lagoon_lounge_1.png" src="https://code.furcode.cn/images/parallax_index.jpg" alt="beek-cg" class="responsive-img resource-description-img lazy">
         </div>
         <div class="right">
-            <a class="waves-effect waves-light btn download-btn disabled"><i class="material-icons left">vertical_align_bottom</i>下载<i class="material-icons right">arrow_drop_down</i></a>
+            <a class="waves-effect waves-light btn download-btn dropdown-button" data-activates="lagoon-lounge-list"><i class="material-icons left">vertical_align_bottom</i>下载<i class="material-icons right">arrow_drop_down</i></a>
+            <ul id="lagoon-lounge-list" class="dropdown-content">
+                <li><a source="lagoon-lounge-2" onclick="getDlLink(this)">第二部</a></li>
+                <li class="divider"></li>
+                <li><a source="lagoon-lounge-3" onclick="getDlLink(this)">第三部</a></li>
+            </ul>
         </div>
     </div>
 </div>
 <br>
-<div class="game-div">
+<div class="game-div" id="div-orekemo">
     <div class="valign-wrapper resource-title">
         <h5 class="valign">Orekemo</h5>
         <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Windows可执行文件"><span class="chip chip-blue">EXE</span></a>
@@ -89,12 +96,13 @@
             <img  data-original="https://code.furcode.cn/resource/orekemo/orekemo_2.png" src="https://code.furcode.cn/images/parallax_index.jpg" alt="beek-cg" class="responsive-img resource-description-img lazy">
         </div>
         <div class="right">
-            <a class="waves-effect waves-light btn download-btn disabled"><i class="material-icons left">vertical_align_bottom</i>下载</a>
+            <a class="waves-effect waves-light btn download-btn"
+               source="orekemo" onclick="getDlLink(this)"><i class="material-icons left">vertical_align_bottom</i>下载</a>
         </div>
     </div>
 </div>
 <br>
-<div class="game-div">
+<div class="game-div" id="div-bakabu">
     <div class="valign-wrapper resource-title">
         <h5 class="valign">笨蛋部</h5>
         <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Windows可执行文件"><span class="chip chip-blue">EXE</span></a>
@@ -115,12 +123,12 @@
         </div>
         <div class="right">
             <a class="waves-effect waves-light btn download-btn"
-               type="bakabu" source="baidu" onclick="getDlLink(this)"><i class="material-icons left">vertical_align_bottom</i>下载</a>
+               source="bakabu" onclick="getDlLink(this)"><i class="material-icons left">vertical_align_bottom</i>下载</a>
         </div>
     </div>
 </div>
 <br>
-<div class="game-div">
+<div class="game-div" id="div-louxia">
     <div class="valign-wrapper resource-title">
         <h5 class="valign">咱的夏天</h5>
         <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Windows可执行文件"><span class="chip chip-blue">EXE</span></a>
@@ -142,7 +150,7 @@
         </div>
         <div class="right">
             <a class="waves-effect waves-light btn download-btn"
-               type="louxia" source="baidu" onclick="getDlLink(this)"><i class="material-icons left">vertical_align_bottom</i>下载</a>
+               source="louxia" onclick="getDlLink(this)"><i class="material-icons left">vertical_align_bottom</i>下载</a>
         </div>
     </div>
 </div>

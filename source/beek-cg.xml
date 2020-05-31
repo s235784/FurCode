@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<res>
+    <file>
+        <name>Beek-CG</name>
+        <image>https://code.furcode.cn/resource/beek/1.jpg</image>
+        <image>https://code.furcode.cn/resource/beek/2.jpg</image>
+    </file>
+    <source>
+        <name>百度云</name>
+        <url>https://pan.baidu.com/s/1hFXWEM-T-8RW2Ta3UYt8xA</url>
+        <passwd>zbpq</passwd>
+    </source>
+    <source>
+        <name>随心云</name>
+        <url>https://nc.heartacg.art/s/D7jDDMYyF8jsjF6</url>
+    </source>
+    <source>
+        <name>Google Drive</name>
+        <url>https://drive.google.com/file/d/1Rze29Ip_XT2BdV6j-nSd4glL4C4-1JYs</url>
+    </source>
+</res>

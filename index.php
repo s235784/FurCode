@@ -8,31 +8,40 @@
 
 define('IN_SYS', TRUE);
 
+if (isset($_GET['status']) && $_GET['status'] != null) {
+    if ($_GET["status"] == "inaccessible") {
+        $showToast = '非法访问！';
+    } else if ($_GET['status'] == 'sourceNull') {
+        $showToast = '参数不能为空！';
+    }
+}
+
 if (empty($_GET['ContextInfo'])) {
-    $ContextInfo = "index";
+    $ContextInfo = 'index';
 } else if ($_GET['ContextInfo'] == null) {
-    $ContextInfo = "index";
+    $ContextInfo = 'index';
 } else {
     $ContextInfo = $_GET['ContextInfo'];
 }
 switch ($ContextInfo) {
     case 'index':
-        $Title = "FurCode";
+        $Title = '主页';
         break;
     case 'static':
-        $Title = "静态资源";
+        $Title = '静态资源';
         break;
     case 'game':
-        $Title = "游戏资源";
+        $Title = '游戏资源';
         break;
     case 'others':
-        $Title = "其他资源";
+        $Title = '其他资源';
         break;
     case 'about':
-        $Title = "关于";
+        $Title = '关于';
         break;
     default :
         include_once('404.html');
+        http_response_code(404);
         return;
         break;
 }
@@ -64,7 +73,7 @@ switch ($ContextInfo) {
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://res.furcode.cn/iconicfont/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet"/>
     <link href="https://res.furcode.cn/materialize/0.97.8/css/materialize.css" media="screen,projection" rel="stylesheet"/>
-    <script type="text/javascript" src="https://res.furcode.cn/jquery/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://res.furcode.cn/jquery/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://res.furcode.cn/materialize/0.97.8/js/materialize.min.js"></script>
     <script type="text/javascript" src="https://res.furcode.cn/jquery/lazyload/1.9.5/lazyload.min.js"></script>
     <script type="text/javascript" src="https://code.furcode.cn/prism/js/prism.js"></script>
@@ -155,13 +164,18 @@ switch ($ContextInfo) {
             bottom: Infinity,
             offset: 0
         });
+
+        <?php
+        if (isset($showToast) && !empty($showToast)) {
+            echo "Materialize.toast('". $showToast ."', 4000);";
+        }
+        ?>
     });
+
+    function getDlLink(param) {
+        const source = param.getAttribute("source");
+        window.open("dl.php?source="+source, "_self");
+    }
 </script>
 </html>
-
-<?php
-// 获取下载链接
-include_once "lib/link.php";
-getDownloadLink("https://code.furcode.cn/dl/link.xml");
-?>
 

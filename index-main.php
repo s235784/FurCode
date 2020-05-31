@@ -1,3 +1,16 @@
+<?php
+/**
+ * 主页
+ * User: nuotian <s235784@gmail.com>
+ * Date: 2020/1/21
+ * Time: 17:01
+ */
+
+if (!defined('IN_SYS')) {
+    header("Location: index.php?status=inaccessible");
+    exit();
+}
+?>
 <main id="main">
     <div class="container" id="main-container">
         <div class="row" style="margin-bottom: 0">
